@@ -1,0 +1,49 @@
+.about-container {
+    padding: 50px 8%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-intro h2 {
+    color: var(--primary-red);
+    margin-bottom: 15px;
+}
+
+.about-intro p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.ceo-card {
+    background: var(--white);
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    display: inline-block;
+}
+
+.ceo-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--light-peach);
+    margin-bottom: 20px;
+}
+
+.ceo-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-red);
+}
+
+.ceo-title {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.ceo-quote {
+    font-style: italic;
+    color: var(--accent-red);
+}

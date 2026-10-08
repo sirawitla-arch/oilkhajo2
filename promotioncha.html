@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรโมชั่น - Farm Cha</title>
+    <link rel="stylesheet" href="stylecha.css">
+    <link rel="stylesheet" href="stylepromotion.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="cha.png" alt="Oilkhajo Logo" class="nav-logo">
+            <span>Oilkhajo</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="homecha.html">Home</a></li>
+            <li><a href="produckcha.html">Products</a></li>
+            <li><a href="promotioncha.html" class="active">Promotion</a></li>
+            <li><a href="aboutuscha.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="loginfarmcha.html" class="btn-logout">ออกจากระบบ</a></li>
+        </ul>
+    </nav>
+
+    <div class="promo-page-container">
+        <h2 class="section-title">โปรโมชั่นพิเศษร้าน Oilkhajo</h2>
+        
+        <div class="promo-grid">
+            <div class="promo-box">
+                <span class="badge">สำหรับลูกค้าทั่วไป</span>
+                <h3>ทานครบ 10 ครั้ง ฟรี 1 ครั้ง!</h3>
+                <p>สะสมแต้มการเข้าทานบุฟเฟต์ครบ 10 ครั้ง รับสิทธิ์ทานฟรีทันที 1 ท่านในครั้งถัดไป</p>
+            </div>
+            
+            <div class="promo-box vip">
+                <span class="badge vip-badge">สำหรับสมาชิก VIP</span>
+                <h3>ทานครบ 5 ครั้ง ฟรี 1 ครั้ง!</h3>
+                <p>สิทธิพิเศษระดับ VIP ทานครบเพียง 5 ครั้ง รับสิทธิ์ทานฟรี 1 ท่าน พร้อมส่วนลดพิเศษวันเกิด</p>
+            </div>
+        </div>
+
+        <section class="vip-form-section">
+            <h3>สมัครสมาชิก VIP (ค่าสมัคร 1,000 บาท)</h3>
+            <form id="vipForm" onsubmit="handleVipRegister(event)">
+                <div class="form-group">
+                    <label>ชื่อ - นามสกุล:</label>
+                    <input type="text" id="fullname" placeholder="นาย/นางสาว..." required>
+                </div>
+                <div class="form-group">
+                    <label>Gmail / อีเมล:</label>
+                    <input type="email" id="email" placeholder="example@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label>เบอร์โทรศัพท์:</label>
+                    <input type="tel" id="phone" placeholder="06X-XXX-XXXX" required>
+                </div>
+                <div class="form-group">
+                    <label>ที่อยู่:</label>
+                    <textarea id="address" rows="3" placeholder="กรอกที่อยู่ของคุณ..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">ยืนยันการสมัคร VIP (1,000 บาท)</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 Oilkhajo Buffet . All Rights Reserved.</p>
+    </footer>
+
+    <script src="javapromotion.js"></script>
+</body>
+</html>

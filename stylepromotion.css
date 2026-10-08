@@ -1,0 +1,74 @@
+.promo-page-container {
+    padding: 40px 8%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.promo-grid {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.promo-box {
+    background: var(--white);
+    border: 2px solid #eee;
+    border-radius: 12px;
+    padding: 30px;
+    flex: 1 1 300px;
+    position: relative;
+}
+
+.promo-box.vip {
+    border-color: var(--primary-red);
+    background: #FFF9F9;
+}
+
+.badge {
+    background: #666;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+}
+
+.vip-badge {
+    background: var(--primary-red);
+}
+
+.promo-box h3 {
+    margin: 15px 0 10px 0;
+    color: var(--primary-red);
+}
+
+.vip-form-section {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.vip-form-section h3 {
+    color: var(--primary-red);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}

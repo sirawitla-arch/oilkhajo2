@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายการสินค้า - Oilkhajo Buffet</title>
+    <link rel="stylesheet" href="stylecha.css">
+    <link rel="stylesheet" href="styleproduck.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="cha.png" alt="Oilkhajo Logo" class="nav-logo">
+            <span>Oilkhajo</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="homecha.html">Home</a></li>
+            <li><a href="produckcha.html" class="active">Products</a></li>
+            <li><a href="promotioncha.html">Promotion</a></li>
+            <li><a href="aboutuscha.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="loginfarmcha.html" class="btn-logout">ออกจากระบบ</a></li>
+        </ul>
+    </nav>
+
+    <div class="product-layout">
+        <section class="products-section">
+            <h2 class="section-title">รายการสินค้าบุฟเฟต์</h2>
+            <div class="product-grid" id="product-grid">
+                <!-- Javascript จะเรนเดอร์สินค้า 6 รายการที่นี่ -->
+            </div>
+        </section>
+
+        <aside class="cart-section">
+            <h3>🛒 ตะกร้าสินค้าของคุณ</h3>
+            <div id="cart-items">
+                <p class="empty-cart">ไม่มีสินค้าในตะกร้า</p>
+            </div>
+            <div class="cart-summary">
+                <h4>ราคารวมทั้งหมด: <span id="total-price">0</span> บาท</h4>
+                <button class="btn-primary" onclick="checkout()">กดสั่งซื้อ</button>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>© 2026 Oilkhajo Buffet . All Rights Reserved.</p>
+    </footer>
+
+    <script src="javaproduck.js"></script>
+</body>
+</html>
